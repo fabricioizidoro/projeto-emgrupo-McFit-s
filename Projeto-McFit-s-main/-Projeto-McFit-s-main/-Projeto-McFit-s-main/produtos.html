@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+<body>
+    <header>
+        <nav >
+            <a href="index.html" class="logo"><span>Mc</span>Fit's</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+               </div>
+
+            <ul class="nav-list">
+                    
+                <li>
+                    <a href="sobre.html">Sobre</a>
+                </li>
+
+                <li>
+                     <a href="produtos.html">Planos</a>
+                </li>
+
+                <li>
+                      <a href="nossa-equipe.html">Equipe</a>
+                </li>
+
+                <li>
+                      <a href="contato.html">contato</a>
+                </li>
+            </ul>
+
+            <a href="contato.html"><button class="btn matricula">Matricule-se</button></a>  
+        </nav>
+
+
+    </header>   
+
+    
+    
+
+
+
+
+    <section class="osplanos">
+
+<div class="container_planos">
+
+    <div class="box_osplanos plano1">
+        <img src="img/cutting.jpg" alt="">
+        <div class="infoplanos">
+            <h3>Cutting</h3>
+            <p> Ideal para aqueles que estão com seu IMC elevado. Esse plano é focado na diminuição do percentual de gordura, ao mesmo tempo que você constroi musculos.</p>
+        
+            <span>Calcule seu imc e descubra o valor de seu plano</span>
+        </div>
+   
+
+    </div>
+    
+    
+    <div class="box_osplanos plano2">
+        <img src="img/bulking.jpg" alt="">
+        <div class="infoplanos">
+            <h3>Bulking</h3>
+            <p> Ideal para aqueles que se encontram em situação de magreza, ou estão num peso ideal e querem aumentar sua massa muscular. Esse plano abrange refeições de alta densidade calórica e exercícios de grande intensidade.</p>
+        
+            <span>Calcule seu imc e descubra o valor de seu plano</span>
+        </div>
+       
+       
+    
+        </div>
+
+        <div class="box_osplanos plano3">
+            <img src="img/manutencao.jpg" alt="">
+            <div class="infoplanos">
+                <h3>Manutenção</h3>
+                <p> Se você já se encontra num peso ideal, e mesmo assim quer melhorar a sua condição física, esse plano é para você. Ele foi designado para que seu corpo perca gordura, ao mesmo tempo que constrói massa muscular.</p>
+            
+                <span>Calcule seu imc e descubra o valor de seu plano</span>
+            </div>
+        
+            </div>
+</div>
+
+
+
+
+</section>
+
+
+
+
+
+
+    <section class="sec_form_imc">  
+
+
+    <div class="conteudo_form2_imc">
+        <h1>Calculadora de IMC </h1>
+
+
+    <form id="form_imc">
+    <div> 
+        <input type="number" placeholder="Digite sua altura em CM (ex : 1.64)" class="inputs_imc required_imc altura" id="altura">
+        <span class="span-required_imc">Nome deve ter no minimo 3 caracteres.</span>
+
+    </div>
+    <div> 
+        <input type="number" placeholder="Digite o seu peso em KG (ex:63)" class="inputs_imc required_imc peso" id="peso">
+        <span class="span-required_imc">Seu telefone deve ter no minimo 8 digitos.</span>
+
+    </div>
+   
+   
+    <p>Sexo</p>
+    <div class="box-select_imc">
+        
+            <div>
+                <input type="radio" id="m" value="m" name="sexo">
+                <label for="m">Masculino</label>
+            </div>
+
+            <div>
+                <input type="radio" id="f" value="f" name="sexo">
+                <label for="f">Feminino</label>
+
+            </div>
+
+           
+    </div>
+    <button class="btn btn_imc" type="button" onclick="calculoImc()">Calcular</button>        
+</form>
+
+
+
+</div>
+<div class="plano_ideal">
+        
+    <h2 id="seu_imc">Descubra qual é o melhor plano para seu corpo!</h2>
+
+    
+        
+        <div class="planos_box">
+            
+            
+            
+            
+                <img src="img/logo só marca.png" alt="" id="fotoplano">
+            
+            
+                <h2 id="titulo_plano"></h2>
+            
+                <p class="texto" id="textoplan">Preencha a calculadora da forma correta e veja seu resultado</p>    
+
+                <P id="preco"></P>
+        
+
+       
+
+    </div>
+
+
+</div>
+</section>   
+<footer class="rodape">
+    <div class="boxs">
+        <h2>Início</h2>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Planos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="nossa-equipe.html">Nossa Equipe</a></li>
+        </ul>
+    </div>
+ 
+    <div class="boxs">
+        <h2>Conheça mais sobre a McFit´s</h2>
+        <p>Criada em 2010, a McFit's surgiu com a idéia de seus cinco fundadores de unir a acadêmia com o fast-food. Mas porquê fast- food? Vamos imaginar que você está naquele dia corrido, com muitas coisas para resolver, ou, acabou de sair de um treino pesado e bateu aquela fome. Quer comer algo prático mas ao mesmo tempo não quer sair da sua dieta ?, então estamos aqui para te ajudar com os nossos menus flexíveis e adaptados a cada tipo biótipo e dietas desdê hipercaloricas até a low-carb. Todas as nossas acadêmias contam com nossas incríveis lanchonetes que podem ser frequentadas por todos os nossos alunos!</p>
+    </div>
+
+   
+    </div>
+    
+</footer>
+
+<div class="redes">
+    <div class="logofooter">
+        <img src="img/logopng.png" alt="">
+    </div>
+
+    <div class="sociais">
+        <div class="social">
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div class="social">
+            <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+
+                    
+            </a>
+        </div>
+
+        <div class="social">
+            <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+</div>
+<script src="script/mobile-navbar.js"></script> 
+</body>
+</html>
